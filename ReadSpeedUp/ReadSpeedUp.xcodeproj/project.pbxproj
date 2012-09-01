@@ -15,6 +15,10 @@
 		699E472215F1E93C0007D882 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 699E472115F1E93C0007D882 /* AppDelegate.m */; };
 		699E472515F1E93C0007D882 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 699E472315F1E93C0007D882 /* MainStoryboard.storyboard */; };
 		699E472815F1E93C0007D882 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 699E472715F1E93C0007D882 /* ViewController.m */; };
+		699E472F15F1E9A00007D882 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 699E472E15F1E9A00007D882 /* libxml2.dylib */; };
+		699E473615F1E9EF0007D882 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 699E473215F1E9EF0007D882 /* HTMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		699E473715F1E9EF0007D882 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 699E473415F1E9EF0007D882 /* HTMLParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc "; }; };
+		699E473815F1E9EF0007D882 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 699E473515F1E9EF0007D882 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,12 @@
 		699E472415F1E93C0007D882 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		699E472615F1E93C0007D882 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		699E472715F1E93C0007D882 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		699E472E15F1E9A00007D882 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		699E473115F1E9EF0007D882 /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
+		699E473215F1E9EF0007D882 /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
+		699E473315F1E9EF0007D882 /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
+		699E473415F1E9EF0007D882 /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
+		699E473515F1E9EF0007D882 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				699E472F15F1E9A00007D882 /* libxml2.dylib in Frameworks */,
 				699E471215F1E93C0007D882 /* UIKit.framework in Frameworks */,
 				699E471415F1E93C0007D882 /* Foundation.framework in Frameworks */,
 				699E471615F1E93C0007D882 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +61,7 @@
 		699E470215F1E93C0007D882 = {
 			isa = PBXGroup;
 			children = (
+				699E472E15F1E9A00007D882 /* libxml2.dylib */,
 				699E471715F1E93C0007D882 /* ReadSpeedUp */,
 				699E471015F1E93C0007D882 /* Frameworks */,
 				699E470E15F1E93C0007D882 /* Products */,
@@ -77,6 +89,7 @@
 		699E471715F1E93C0007D882 /* ReadSpeedUp */ = {
 			isa = PBXGroup;
 			children = (
+				699E473015F1E9EF0007D882 /* htmlparser */,
 				699E472015F1E93C0007D882 /* AppDelegate.h */,
 				699E472115F1E93C0007D882 /* AppDelegate.m */,
 				699E472315F1E93C0007D882 /* MainStoryboard.storyboard */,
@@ -96,6 +109,19 @@
 				699E471F15F1E93C0007D882 /* ReadSpeedUp-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		699E473015F1E9EF0007D882 /* htmlparser */ = {
+			isa = PBXGroup;
+			children = (
+				699E473115F1E9EF0007D882 /* HTMLNode.h */,
+				699E473215F1E9EF0007D882 /* HTMLNode.m */,
+				699E473315F1E9EF0007D882 /* HTMLParser.h */,
+				699E473415F1E9EF0007D882 /* HTMLParser.m */,
+				699E473515F1E9EF0007D882 /* README.md */,
+			);
+			name = htmlparser;
+			path = ../../htmlparser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +177,7 @@
 			files = (
 				699E471C15F1E93C0007D882 /* InfoPlist.strings in Resources */,
 				699E472515F1E93C0007D882 /* MainStoryboard.storyboard in Resources */,
+				699E473815F1E9EF0007D882 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +191,8 @@
 				699E471E15F1E93C0007D882 /* main.m in Sources */,
 				699E472215F1E93C0007D882 /* AppDelegate.m in Sources */,
 				699E472815F1E93C0007D882 /* ViewController.m in Sources */,
+				699E473615F1E9EF0007D882 /* HTMLNode.m in Sources */,
+				699E473715F1E9EF0007D882 /* HTMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +240,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
 			};
@@ -231,6 +261,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
