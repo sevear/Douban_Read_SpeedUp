@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  OptionsTableViewController.h
 //  ReadSpeedUp
 //
 //  Created by zhu-home on 12-9-1.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface OptionsTableViewController : UITableViewController
 
 @end
